@@ -1,0 +1,36 @@
+@import url(style.css);
+
+.hidden {
+  display: none;
+}
+
+.view-more:not(:checked) ~ label,
+.view-more:checked ~ .hidden {
+  display: block;
+}
+
+.view-more,
+.view-more:checked ~ label {
+  display: none;
+}
+
+.view-less:checked ~ label,
+.view-less:not(:checked) ~ .hidden {
+  display: none;
+}
+
+.view-less,
+.view-less:checked ~ label {
+  display: block;
+}
+
+
+
+
+
+label {
+  margin: 5px;
+  cursor: pointer;
+  width: 5em;
+}
+
