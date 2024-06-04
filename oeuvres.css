@@ -1,0 +1,62 @@
+:root {
+    --primary-color:#2B3A67;
+    --secondary-color:#FFE0D4;
+    --dark: black;
+    --light:white ;
+
+    --primary-font: @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    --secondary-font : secondaryFont;
+    --font-title-size : ;
+    --font-size: 
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 70%;
+    height: auto;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 20px;
+    width: 100%;
+}
+
+article:nth-child(2n) {
+    background-color: var(--light);
+}
+
+article p {
+    max-width: 50%;
+}
+
+@media screen and (min-width: 360px) {
+    
+    img {
+        max-width: 50rem;
+        max-height: 50rem;
+    }
+    
+    article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #F5F5F5;
+    }
+    
+    article:nth-child(2n) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
