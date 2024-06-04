@@ -1,0 +1,19 @@
+@import url(style.css);
+
+.block-profile-picture{
+    background-color: var(--secondary-color);
+    padding-top: 1rem;
+    margin-bottom: -5rem;
+    height: 40vw;
+}
+.profile-picture{
+    position: absolute;
+    width: 50vw;
+    height: auto;
+    display: block;
+    margin-top: 5rem;
+    top: 10%;
+    transform: translateY(10%);
+    left: 50%;
+    transform: translateX(-50%);
+}

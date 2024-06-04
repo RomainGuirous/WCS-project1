@@ -13,10 +13,56 @@
     --font-title-size : ;
     --font-size: 
 }
+* {
+    box-sizing: border-box;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  body {
+    margin:0;
+  }
 
+header{
+    background-color: var(--primary-color);
+}
 
+h3{
+    display: inline-block;
+    margin: 0 1rem;
+    color: var(--light);
+}
 
 .logo{
     font-family: var(--secondary-font);
+    font-size: 5rem;
+    display: inline-block;
+    margin: 0;
 }
 
+.logo > a{
+    color: var(--dark);
+}
+
+ .first-element{
+    margin-left: 3rem;
+ }
+
+ .prin{
+    font-family: var(--secondary-font);
+ }
+
+ .menu{
+    display: flex;
+    justify-content:space-between;
+    
+ }
+
+ .last-element{
+    margin-right: 5rem;
+ }
+
+ .link{
+    margin-top: 2rem;
+ }
