@@ -16,10 +16,24 @@
             <h3 class=" link last-element"> <a href="actualites.html">Actualités</a></h3>
         </div>
     </header>
+    
     <main>
-
+            <?php require('data.php'); ?>
+        <h1>Actualités</h1>
+        <div class="actualites-container">
+            <?php foreach ($actualite as $infosArray) : ?>
+                <article>
+                    <img src="<?= $infosArray['image'] ?>" alt=<?= $infosArray['title'] ?>>
+                    <p>
+                        <?= $infosArray['description'] ?>
+                    </p>
+                </article>
+            <?php endforeach ?>  
+        </div>    
+    
     </main>
-<footer>
+
+    <footer>
             <div class="author">
                 <ul class="list-wihout-dot">
                 <li>Romain Guirous</li>
