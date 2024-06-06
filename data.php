@@ -94,3 +94,25 @@ $expositions = [
         ],
     ],
 ];
+$oeuvres = [
+    [
+        "image" => "./images/a-voyage-to-the-moon-2874114034.jpg" ,
+        "artworkName" => 'oeuvre1',
+        "description" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, maxime!",
+    ],
+    [
+        "image" => "./images/Gustave+DorA9_The+Vale+of+Tears+29-2979051288.jpg",
+        "artworkName" => 'oeuvre2',
+        "description" => "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, laudantium.",
+    ],
+    [
+        "image" => "./images/the-divine-comedy-paradise-canto-31-gustave-dore-2458464552.jpg",
+        "artworkName" => 'oeuvre3',
+        "description" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ab!",
+    ],
+    [
+        "image" => "./images/the-triumph-of-christianity-over-paganism-1899-gustave-dore-2091869783.jpg",
+        "artworkName" => 'oeuvre4',
+        "description" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, possimus?",
+    ],
+];

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="expositions.css">
+    <link rel="stylesheet" href="oeuvres.css">
     <title>Document</title>
 </head>
 
@@ -21,25 +21,18 @@
 
     <main>
         <?php require('data.php'); ?>
-        <?php foreach ($expositions as $year => $infosArray) : ?>
-            <!-- $date -> les titres (années); $infosArray -> tout le contenu -->
-            <h1><?= $year ?></h1>
-            <ul>
-                <?php foreach ($infosArray as $information) : ?>
-                    <!-- $categorie-> date, image, lieu, etc; $information -> la valeur de $categorie -->
-                    <li>
-                        <img src="<?= $information['image'] ?>" alt="Highschool of Smalltown">
-                        <h2><?= $information['expositionName'] ?>, <?= $information['location'] ?></h2>
-                        <h4><?= $information['date'] ?></h4>
-                        <p><?= $information['description'] ?></p>
-                    </li>
-                <?php endforeach ?>
-            </ul>
-        <?php endforeach ?>
-
-
+        <h1>Œuvres</h1>
+        <div class="oeuvres-container">
+            <?php foreach ($oeuvres as $infosArray) : ?>
+                <article>
+                    <img src="<?= $infosArray['image'] ?>" alt=<?= $infosArray['artworkName'] ?>>
+                    <p>
+                        <?= $infosArray['description'] ?>
+                    </p>
+                </article>
+            <?php endforeach ?>  
+        </div>
     </main>
-
     <footer>
         <div class="author">
             <ul class="list-wihout-dot">
@@ -57,7 +50,6 @@
             </ul>
         </div>
     </footer>
-
 </body>
 
 </html>
