@@ -16,14 +16,17 @@
 
     <main>
         <?php require('data.php'); ?>
-        <?php foreach ($expositions as $year => $infosArray) : ?> // $date -> les titres (années); $infosArray -> tout le contenu
+            <?php foreach ($expositions as $year => $infosArray) : ?>
+            <!-- $date -> les titres (années); $infosArray -> tout le contenu -->
             <h1><?= $year ?></h1>
             <ul>
-                <?php foreach ($infosArray as $information) : ?> //$categorie-> date, image, lieu, etc; $information -> la valeur de $categorie
+                <?php foreach ($infosArray as $information) : ?>
+                    <!-- $categorie-> date, image, lieu, etc; $information -> la valeur de $categorie -->
                     <li>
                         <img src="<?= $information['image'] ?>" alt="Highschool of Smalltown">
-                        <h2><?= $year ?></h2>
-
+                        <h2><?= $information['expositionName'] ?>, <?= $information['location'] ?></h2>
+                        <h4><?= $information['date'] ?></h4>
+                        <p><?= $information['description'] ?></p>
                     </li>
                 <?php endforeach ?>
             </ul>
