@@ -94,3 +94,26 @@ $expositions = [
         ],
     ],
 ];
+
+$actualites = [
+    'Actualité 1' => [
+            'actualiteName' =>'',
+            'date' => '',
+            'description' => '',
+            'image' => '',
+        ],
+    'Actualité2' =>  [
+            'date' => '',
+            'actualiteName' =>'',
+            'description' => '',
+            'location' => '',
+            'image' => '',
+        ],
+    'Actualités3' => [
+            'date' => '',
+            'expositionName' =>'',
+            'description' => '',
+            'location' => '',
+            'image' => '',
+        ],
+    ];
