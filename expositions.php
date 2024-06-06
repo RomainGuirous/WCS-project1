@@ -10,8 +10,13 @@
 </head>
 
 <body>
-    <header>
-
+<header>
+        <div class="menu">
+            <h1 class="logo"><a href="index.html">ZC</a></h1>
+            <h3 class="link"> <a href="expositions.html"> Expositions</a></h3>
+            <h3 class="link"> <a href="oeuvres.html">Oeuvres</a></h3>
+            <h3 class=" link last-element"> <a href="actualites.html">Actualités</a></h3>
+        </div>
     </header>
 
     <main>
@@ -33,7 +38,21 @@
     </main>
 
     <footer>
-
+        <div class="author">
+            <ul class="list-wihout-dot">
+                <li>Romain Guirous</li>
+                <li>Dorian Dequirez</li>
+                <li>Hermine Som Idellette Judith</li>
+            </ul>
+        </div>
+        <div class="navigation">
+            <ul class="list-wihout-dot">
+                <li><a href="index.html">ZC</a></li>
+                <li><a href="expositions.html"> Expositions</a></li>
+                <li><a href="oeuvres.html">Oeuvres</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+            </ul>
+        </div>
     </footer>
 
 </body>
