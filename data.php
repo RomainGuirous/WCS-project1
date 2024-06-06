@@ -103,15 +103,15 @@ $actualites = [
             'image' => '',
         ],
     'Actualité2' =>  [
-            'date' => '',
             'actualiteName' =>'',
+             'date' => '',
             'description' => '',
             'location' => '',
             'image' => '',
         ],
     'Actualités3' => [
+            'actualiteName' =>'',
             'date' => '',
-            'expositionName' =>'',
             'description' => '',
             'location' => '',
             'image' => '',
