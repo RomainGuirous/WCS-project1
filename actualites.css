@@ -1,1 +1,53 @@
 @import url(style.css);
+
+.actualites-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 70%;
+    height: auto;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 20px;
+    width: 100%;
+}
+
+article:nth-child(2n) {
+    background-color: var(--light);
+}
+
+article p {
+    max-width: 50%;
+}
+
+@media screen and (min-width: 360px) {
+    
+    img {
+        max-width: 50rem;
+        max-height: 50rem;
+    }
+    
+    article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color:var(--secondary-color);
+    }
+    
+    article:nth-child(2n) {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: #F5F5F5;
+    }
+}
