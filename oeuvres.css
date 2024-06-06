@@ -1,6 +1,6 @@
 @import url(style.css);
 
-div {
+.oeuvres-container {
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -1,31 +1,29 @@
 @import url(style.css);
 
 .hidden {
+  visibility: hidden;
+}
+input{
   display: none;
 }
-
 .view-more:not(:checked) ~ label,
 .view-more:checked ~ .hidden {
-  display: block;
+  visibility: visible;
 }
 
 .view-more,
 .view-more:checked ~ label {
-  display: none;
+  visibility: hidden;
 }
 
 .view-less:checked ~ label,
 .view-less:not(:checked) ~ .hidden {
-  display: none;
+  visibility: hidden;
 }
 
-.view-less,
-.view-less:checked ~ label {
-  display: block;
+.view-less {
+  visibility: visible;
 }
-
-
-
 
 
 label {
