@@ -94,6 +94,29 @@ $expositions = [
         ],
     ],
 ];
+
+$actualites = [
+    'Actualité 1' => [
+            'actualiteName' =>'',
+            'date' => '',
+            'description' => '',
+            'image' => '',
+        ],
+    'Actualité2' =>  [
+            'actualiteName' =>'',
+             'date' => '',
+            'description' => '',
+            'location' => '',
+            'image' => '',
+        ],
+    'Actualités3' => [
+            'actualiteName' =>'',
+            'date' => '',
+            'description' => '',
+            'location' => '',
+            'image' => '',
+        ],
+    ];
 $oeuvres = [
     [
         "image" => "./images/a-voyage-to-the-moon-2874114034.jpg" ,
