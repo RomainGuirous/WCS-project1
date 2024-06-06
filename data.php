@@ -96,27 +96,25 @@ $expositions = [
 ];
 
 $actualites = [
-    'Actualité 1' => [
-            'actualiteName' =>'',
-            'date' => '',
-            'description' => '',
-            'image' => '',
+     [
+            "title" => "Culture et pop",
+            "image" => "./images/ ",
+            "description" => "Lorem ipsum dolor sit amet. Ut velit nobis qui quas quidem ad odit eaque et voluptatibus voluptatem et consectetur perspiciatis id reprehenderit vero ut obcaecati soluta. Qui officiis.",   
         ],
-    'Actualité2' =>  [
-            'actualiteName' =>'',
-             'date' => '',
-            'description' => '',
-            'location' => '',
-            'image' => '',
+    
+        [
+            "title" => "Musée des beaux-arts du Canada: un nouveau Directeur! ",
+            "image" => "./images/ ",
+            "description" => "Aut libero odit ab sequi quos est quidem dolores est nisi omnis et quia consequuntur qui suscipit quasi aut tempora quia.",
+            
         ],
-    'Actualités3' => [
-            'actualiteName' =>'',
-            'date' => '',
-            'description' => '',
-            'location' => '',
-            'image' => '',
+        [
+            "title" => "Art et photographie",
+            "image" => "./images/ ",
+            "description" => "Qui obcaecati nobis et fugiat doloremque et quos dolores. Et internos saepe et exercitationem nesciunt et velit officiis quo autem nemo",
+            
         ],
-    ];
+    ];  
 $oeuvres = [
     [
         "image" => "./images/a-voyage-to-the-moon-2874114034.jpg" ,
