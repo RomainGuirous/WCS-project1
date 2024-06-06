@@ -97,20 +97,20 @@ $expositions = [
 
 $actualites = [
      [
-            "title" => "Culture et pop",
             "image" => "./images/culturepop.jpg",
+            "title" => "Culture et pop",
             "description" => "Lorem ipsum dolor sit amet. Ut velit nobis qui quas quidem ad odit eaque et voluptatibus voluptatem et consectetur perspiciatis id reprehenderit vero ut obcaecati soluta.",   
         ],
     
         [
-            "title" => "Musée des beaux-arts du Canada: un nouveau Directeur! ",
             "image" => "./images/museecanada.jpg",
+            "title" => "Musée des beaux-arts du Canada: un nouveau Directeur! ",
             "description" => "Aut libero odit ab sequi quos est quidem dolores est nisi omnis et quia consequuntur qui suscipit quasi aut tempora quia.",
             
         ],
         [
-            "title" => "Art et photographie",
             "image" => "./images/artphographie.png",
+            "title" => "Art et photographie",
             "description" => "Qui obcaecati nobis et fugiat doloremque et quos dolores. Et internos saepe et exercitationem nesciunt et velit officiis quo autem nemo.",
             
         ],
