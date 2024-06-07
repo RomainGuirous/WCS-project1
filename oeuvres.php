@@ -15,7 +15,7 @@
             <h1 class="logo"><a href="index.html">ZC</a></h1>
             <h3 class="link"> <a href="expositions.php"> Expositions</a></h3>
             <h3 class="link"> <a href="oeuvres.php">Oeuvres</a></h3>
-            <h3 class=" link last-element"> <a href="actualites.html">Actualités</a></h3>
+            <h3 class=" link last-element"> <a href="actualites.php">Actualités</a></h3>
         </div>
     </header>
 
