@@ -21,7 +21,7 @@
 
     <main>
         <?php require('data.php'); ?>
-        <h1>Œuvres</h1>
+        <!-- <h1>Œuvres</h1> -->
         <div class="oeuvres-container">
             <?php foreach ($oeuvres as $infosArray) : ?>
                 <article>

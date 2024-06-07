@@ -7,6 +7,10 @@ input{
   display: none;
 }
 
+li img {
+  width: 25%;
+  height: auto;
+}
 
 label {
   margin: 5px;
