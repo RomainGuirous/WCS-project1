@@ -53,7 +53,7 @@
                 <li><a href="index.html">ZC</a></li>
                 <li><a href="expositions.php"> Expositions</a></li>
                 <li><a href="oeuvres.html">Oeuvres</a></li>
-                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="actualites.php">Actualités</a></li>
             </ul>
         </div>
     </footer>
