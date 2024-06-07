@@ -28,7 +28,7 @@
                 <?php foreach ($infosArray as $information) : ?>
                     <!-- $categorie-> date, image, lieu, etc; $information -> la valeur de $categorie -->
                     <li>
-                        <!-- <img src="<?= $information['image'] ?>" alt="Highschool of Smalltown"> -->
+                        <img src="<?= $information['image'] ?>" alt="Highschool of Smalltown">
                         <h2><?= $information['expositionName'] ?>, <?= $information['location'] ?></h2>
                         <h4><?= $information['date'] ?></h4>
                         <p><?= $information['description'] ?></p>
@@ -62,7 +62,6 @@
 <script>
     function more($year) {
         var more = document.getElementById("more"+$year);
-        console.log($year);
         var description = document.getElementById("description"+$year);
         var less = document.getElementById("less"+$year);
         more.classList.add("hidden");
