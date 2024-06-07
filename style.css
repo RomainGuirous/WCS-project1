@@ -1,94 +1,103 @@
 @font-face {
-    font-family:secondaryFont;
+    font-family: secondaryFont;
     src: url('font/Gibrael.ttf');
 }
+
 :root {
-    --primary-color:#2B3A67;
-    --secondary-color:#FFE0D4;
+    --primary-color: #2B3A67;
+    --secondary-color: #FFE0D4;
     --dark: black;
-    --light:white ;
+    --light: white;
 
     --primary-font: @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    --secondary-font : secondaryFont;
-    --font-title-size : ;
-    --font-size: 
+    --secondary-font: secondaryFont;
+    --font-title-size: ;
+    --font-size:
 }
+
 * {
     box-sizing: border-box;
     font-family: var(--primary-font);
-  }
-  a{
+}
+
+a {
     text-decoration: none;
     color: white;
-  }
-  body {
-    margin:0;
-  }
+}
 
-header{
+body {
+    margin: 0;
+}
+
+header {
     background-color: var(--primary-color);
 }
 
-footer{
+footer {
     background-color: var(--primary-color);
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.author{
- color: var(--light);
+.author {
+    color: var(--light);
 }
-.author > ul > li{
+
+.author>ul>li {
     margin: 1rem 0;
 }
-.navigation > ul > li{
+
+.navigation>ul>li {
     margin: 5px 0;
 }
-.list-wihout-dot{
+
+.list-wihout-dot {
     list-style: none;
 }
-.navigation{
+
+.navigation {
     grid-column: 3;
     display: flex;
     flex-direction: column;
     margin-right: 3rem;
     align-items: end;
 }
-h3{
+
+h3 {
     display: inline-block;
     margin: 0 1rem;
     color: var(--light);
 }
 
-.logo{
+.logo {
     font-family: var(--secondary-font);
     font-size: 5rem;
     display: inline-block;
     margin: 0;
 }
 
-.logo > a{
+.logo>a {
     color: var(--light);
 }
 
- .first-element{
+.first-element {
     margin-left: 3rem;
- }
+}
 
- .prin{
+.prin {
     font-family: var(--secondary-font);
- }
+}
 
- .menu{
+.menu {
     display: flex;
-    justify-content:space-between;
-    
- }
+    justify-content: space-between;
 
- .last-element{
+}
+
+.last-element {
     margin-right: 5rem;
- }
+}
 
- .link{
+.link {
     margin-top: 2rem;
- }
+}

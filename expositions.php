@@ -10,18 +10,18 @@
 </head>
 
 <body>
-<header>
+    <header>
         <div class="menu">
             <h1 class="logo"><a href="index.html">ZC</a></h1>
             <h3 class="link"> <a href="expositions.php"> Expositions</a></h3>
-            <h3 class="link"> <a href="oeuvres.html">Oeuvres</a></h3>
+            <h3 class="link"> <a href="oeuvres.php">Oeuvres</a></h3>
             <h3 class=" link last-element"> <a href="actualites.html">Actualités</a></h3>
         </div>
     </header>
 
     <main>
-        <?php require('data.php'); $i = 0;?>
-            <?php foreach ($expositions as $year => $infosArray) : $i++; ?>
+        <?php require('data.php') ?>
+            <?php foreach ($expositions as $year => $infosArray) : ?>
             <!-- $date -> les titres (années); $infosArray -> tout le contenu -->
             <h1><?= $year ?></h1><img class="more" id="more<?= $year ?>" onclick="more(<?php echo($year); ?>)" src="images/more.png"><img id="less<?= $year ?>" class="hidden" onclick="less(<?php echo($year); ?>)" src="images/less.png">
             <ul id="description<?= $year ?>" class="hidden">

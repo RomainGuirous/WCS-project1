@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="actualites.css">
+    <link rel="stylesheet" href="oeuvres.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <div class="menu">
@@ -16,38 +18,38 @@
             <h3 class=" link last-element"> <a href="actualites.html">Actualités</a></h3>
         </div>
     </header>
-    
+
     <main>
-            <?php require('data.php'); ?>
-        <h1>Actualités</h1>
-        <div class="actualites-container">
-            <?php foreach ($actualite as $infosArray) : ?>
+        <?php require('data.php'); ?>
+        <h1>Œuvres</h1>
+        <div class="oeuvres-container">
+            <?php foreach ($oeuvres as $infosArray) : ?>
                 <article>
-                    <img src="<?= $infosArray['image'] ?>" alt=<?= $infosArray['title'] ?>>
+                    <img src="<?= $infosArray['image'] ?>" alt=<?= $infosArray['artworkName'] ?>>
                     <p>
                         <?= $infosArray['description'] ?>
                     </p>
                 </article>
             <?php endforeach ?>  
-        </div>    
-    
+        </div>
     </main>
-
     <footer>
-            <div class="author">
-                <ul class="list-wihout-dot">
+        <div class="author">
+            <ul class="list-wihout-dot">
                 <li>Romain Guirous</li>
                 <li>Dorian Dequirez</li>
                 <li>Hermine Som Idellette Judith</li>
-            </ul></div>
-            <div class="navigation">
-                <ul class="list-wihout-dot">
-                    <li><a href="index.html">ZC</a></li>
-                    <li><a href="expositions.php"> Expositions</a></li>
-                    <li><a href="oeuvres.html">Oeuvres</a></li>
-                    <li><a href="actualites.html">Actualités</a></li>
-                </ul>
-            </div>
+            </ul>
+        </div>
+        <div class="navigation">
+            <ul class="list-wihout-dot">
+                <li><a href="index.html">ZC</a></li>
+                <li><a href="expositions.php"> Expositions</a></li>
+                <li><a href="oeuvres.html">Oeuvres</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
+
 </html>

@@ -42,11 +42,12 @@ article p {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        background-color: #F5F5F5;
+        background-color:var(--secondary-color);
     }
     
     article:nth-child(2n) {
         display: flex;
         flex-direction: row-reverse;
+        background-color: #F5F5F5;
     }
 }
