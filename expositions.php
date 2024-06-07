@@ -20,15 +20,15 @@
     </header>
 
     <main>
-        <?php require('data.php'); ?>
-        <?php foreach ($expositions as $year => $infosArray) : ?>
+        <?php require('data.php') ?>
+            <?php foreach ($expositions as $year => $infosArray) : ?>
             <!-- $date -> les titres (années); $infosArray -> tout le contenu -->
-            <h1><?= $year ?></h1>
-            <ul>
+            <h1><?= $year ?></h1><img class="more" id="more<?= $year ?>" onclick="more(<?php echo($year); ?>)" src="images/more.png"><img id="less<?= $year ?>" class="hidden" onclick="less(<?php echo($year); ?>)" src="images/less.png">
+            <ul id="description<?= $year ?>" class="hidden">
                 <?php foreach ($infosArray as $information) : ?>
                     <!-- $categorie-> date, image, lieu, etc; $information -> la valeur de $categorie -->
                     <li>
-                        <img src="<?= $information['image'] ?>" alt="Highschool of Smalltown">
+                        <!-- <img src="<?= $information['image'] ?>" alt="Highschool of Smalltown"> -->
                         <h2><?= $information['expositionName'] ?>, <?= $information['location'] ?></h2>
                         <h4><?= $information['date'] ?></h4>
                         <p><?= $information['description'] ?></p>
@@ -59,5 +59,25 @@
     </footer>
 
 </body>
+<script>
+    function more($year) {
+        var more = document.getElementById("more"+$year);
+        console.log($year);
+        var description = document.getElementById("description"+$year);
+        var less = document.getElementById("less"+$year);
+        more.classList.add("hidden");
+        description.classList.remove("hidden");
+        less.classList.remove("hidden");
+    }
+    function less($year) {
+        var less = document.getElementById("less"+$year);
+        var description = document.getElementById("description"+$year);
+        var more = document.getElementById("more"+$year);
+        less.classList.add("hidden");
+        description.classList.add("hidden");
+        more.classList.remove("hidden");
+    }
 
+
+</script>
 </html>
