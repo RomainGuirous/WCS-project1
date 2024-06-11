@@ -3,7 +3,8 @@
 .hidden {
   display: none;
 }
-input{
+
+input {
   display: none;
 }
 
@@ -18,3 +19,28 @@ label {
   width: 5em;
 }
 
+.barre-deroulante {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-color);
+  margin: 10px;
+  padding: 10px;
+}
+
+.barre-deroulante img {
+  height: 30px;
+  width: auto;
+}
+
+@media screen and (max-width: 360px) {
+
+  ul img {
+    width: 14rem;
+    height: auto;
+  }
+
+  
+
+}

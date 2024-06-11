@@ -10,12 +10,20 @@
 </head>
 
 <body>
-    <header>
+<header>
         <div class="menu">
             <h1 class="logo"><a href="index.html">ZC</a></h1>
-            <h3 class="link"> <a href="expositions.php"> Expositions</a></h3>
-            <h3 class="link"> <a href="oeuvres.php">Oeuvres</a></h3>
-            <h3 class=" link last-element"> <a href="actualites.php">Actualités</a></h3>
+            <ul>
+                <li>
+                    <h3 class="link"> <a href="expositions.php"> Expositions</a></h3>
+                </li>
+                <li>
+                    <h3 class="link"> <a href="oeuvres.php">Oeuvres</a></h3>
+                </li>
+                <li>
+                    <h3 class=" link last-element"> <a href="actualites.php">Actualités</a></h3>
+                </li>
+            </ul>
         </div>
     </header>
 

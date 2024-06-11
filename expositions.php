@@ -13,17 +13,27 @@
     <header>
         <div class="menu">
             <h1 class="logo"><a href="index.html">ZC</a></h1>
-            <h3 class="link"> <a href="expositions.php"> Expositions</a></h3>
-            <h3 class="link"> <a href="oeuvres.php">Oeuvres</a></h3>
-            <h3 class=" link last-element"> <a href="actualites.php">Actualités</a></h3>
+            <ul>
+                <li>
+                    <h3 class="link"> <a href="expositions.php"> Expositions</a></h3>
+                </li>
+                <li>
+                    <h3 class="link"> <a href="oeuvres.php">Oeuvres</a></h3>
+                </li>
+                <li>
+                    <h3 class=" link last-element"> <a href="actualites.php">Actualités</a></h3>
+                </li>
+            </ul>
         </div>
     </header>
 
     <main>
         <?php require('data.php') ?>
-            <?php foreach ($expositions as $year => $infosArray) : ?>
-            <!-- $date -> les titres (années); $infosArray -> tout le contenu -->
-            <h1><?= $year ?></h1><img class="more" id="more<?= $year ?>" onclick="more(<?php echo($year); ?>)" src="images/more.png"><img id="less<?= $year ?>" class="hidden" onclick="less(<?php echo($year); ?>)" src="images/less.png">
+        <?php foreach ($expositions as $year => $infosArray) : ?>
+            <div class="barre-deroulante">
+                <!-- $date -> les titres (années); $infosArray -> tout le contenu -->
+                <h1><?= $year ?></h1><img class="more" id="more<?= $year ?>" onclick="more(<?php echo ($year); ?>)" src="images/more.png"><img id="less<?= $year ?>" class="hidden" onclick="less(<?php echo ($year); ?>)" src="images/less.png">
+            </div>
             <ul id="description<?= $year ?>" class="hidden">
                 <?php foreach ($infosArray as $information) : ?>
                     <!-- $categorie-> date, image, lieu, etc; $information -> la valeur de $categorie -->
@@ -61,22 +71,22 @@
 </body>
 <script>
     function more($year) {
-        var more = document.getElementById("more"+$year);
-        var description = document.getElementById("description"+$year);
-        var less = document.getElementById("less"+$year);
+        var more = document.getElementById("more" + $year);
+        var description = document.getElementById("description" + $year);
+        var less = document.getElementById("less" + $year);
         more.classList.add("hidden");
         description.classList.remove("hidden");
         less.classList.remove("hidden");
     }
+
     function less($year) {
-        var less = document.getElementById("less"+$year);
-        var description = document.getElementById("description"+$year);
-        var more = document.getElementById("more"+$year);
+        var less = document.getElementById("less" + $year);
+        var description = document.getElementById("description" + $year);
+        var more = document.getElementById("more" + $year);
         less.classList.add("hidden");
         description.classList.add("hidden");
         more.classList.remove("hidden");
     }
-
-
 </script>
+
 </html>

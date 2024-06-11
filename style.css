@@ -31,6 +31,20 @@ body {
 
 header {
     background-color: var(--primary-color);
+    
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+header li {
+    padding-left: 100px;
+    padding-right:100px; 
 }
 
 footer {
@@ -90,7 +104,10 @@ h3 {
 
 .menu {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding-right: 100px;
 
 }
 
@@ -98,6 +115,21 @@ h3 {
     margin-right: 5rem;
 }
 
-.link {
+/* .link {
     margin-top: 2rem;
+} */
+
+@media screen and (max-width: 360px) {
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0px;
+      }
+    
+      header li {
+        padding-left: 0%;
+        padding-right: 0%;
+      }
+
 }
