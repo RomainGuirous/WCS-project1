@@ -105,7 +105,7 @@ $actualites = [
         [
             "image" => "./images/museecanada.jpg",
             "title" => "Musée des beaux-arts du Canada: un nouveau Directeur! ",
-            "description" => "Aut libero odit ab sequi quos est quidem dolores est nisi omnis et quia consequuntur qui suscipit quasi aut tempora quia.",
+            "description" => "EN BREF – Sébastien Lecornu succèdera à Guy Salteo au poste de directeur du Musée de Grenoble, à compter du 1er septembre 2024. Il aura notamment pour mission « d’élaborer (un) nouveau projet culturel et scientifique ». Cet agrégé d’histoire est depuis 2010 est un passionné de culture.",
             
         ],
         [
