@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="oeuvres.css">
+    <link rel="icon" href="/images/ZC.png">
     <title>Oeuvres</title>
 </head>
 
@@ -35,7 +36,7 @@
                 <article>
                     <img src="<?= $infosArray['image'] ?>" alt=<?= $infosArray['artworkName'] ?>>
                     <p>
-                        <?= $infosArray['description'] ?>
+                        <?= $infosArray['dimension'] ?> - <i><?= $infosArray['artworkName'] ?></i> - <?= $infosArray['year'] ?> -<?= $infosArray['technique'] ?>
                     </p>
                 </article>
             <?php endforeach ?>  
