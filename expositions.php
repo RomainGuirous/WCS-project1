@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="expositions.css">
-    <title>Document</title>
+    <title>Expositions</title>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
             <h1 class="logo"><a href="index.html">ZC</a></h1>
             <ul>
                 <li>
-                    <h3 class="link"> <a href="expositions.php"> Expositions</a></h3>
+                    <h3 class="link hover-header"> <a href="expositions.php"> Expositions</a></h3>
                 </li>
                 <li>
                     <h3 class="link"> <a href="oeuvres.php">Oeuvres</a></h3>
@@ -39,9 +39,9 @@
                     <!-- $categorie-> date, image, lieu, etc; $information -> la valeur de $categorie -->
                     <li>
                         <img src="<?= $information['image'] ?>" alt=<?= $information['nomImage'] ?>>
-                        <h2><?= $information['expositionName'] ?>, <?= $information['location'] ?></h2>
+                        <h2><?= $information['structure'] ?>, <?= $information['location'] ?></h2>
                         <h4><?= $information['date'] ?></h4>
-                        <p><?= $information['description'] ?></p>
+                        <p>"<?= $information['expositionName'] ?>" - Du <?= $information['date'] ?> au <?= $information['dateFin'] ?>, <?= $information['description'] ?></p>
                     </li>
                 <?php endforeach ?>
             </ul>

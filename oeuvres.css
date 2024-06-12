@@ -12,6 +12,11 @@ article img {
     height: auto;
 }
 
+article img:hover {
+    max-width: 100rem;
+    height: auto;
+}
+
 article {
     display: flex;
     flex-direction: column;
