@@ -1,0 +1,46 @@
+@import url(style.css);
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin: auto 25%;
+}
+
+input{
+    margin-bottom: 10px;
+    height: 5vh;    
+}
+
+.description{
+    height: 10vh;
+    margin-bottom: 15vh;
+}
+
+label{
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.input-form{
+    margin-top: 1vw;
+    position: relative;
+}
+
+.title{ 
+    text-align:center;
+    display:inline-block;
+    position:relative;
+    width:100%;
+   }
+
+
+   @media screen and (max-width: 360px) {
+
+    .contact {
+        margin: auto 5%;
+    }
+
+}

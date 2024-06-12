@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="actualites.css">
-    <link rel="icon" href="/images/ZC.png">
-    <title>Actualités</title>
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact</title>
 </head>
 
 <body>
@@ -22,33 +21,37 @@
                     <h3 class="link"> <a href="oeuvres.php">Oeuvres</a></h3>
                 </li>
                 <li>
-                    <h3 class=" link hover-header"> <a href="actualites.php">Actualités</a></h3>
+                    <h3 class=" link "> <a href="actualites.php">Actualités</a></h3>
                 </li>
                 <li>
-                    <h3 class="link last-element"> <a href="contact.html">Contactez-moi</a></h3>
+                    <h3 class="link hover-header last-element"> <a href="contact.html">Contactez-moi</a></h3>
                 </li>
             </ul>
         </div>
     </header>
 
     <main>
-        <?php require('data.php'); ?>
-        <div class="actualites-container">
-            <?php foreach ($actualites as $infosArray) : ?>
-                <article>
-                <div>
-                    <h1><?= $infosArray['title'] ?></h1>  
-                    <p>
-                        <?= $infosArray['description'] ?>
-                    </p>
-                    </div>  
-                    <img src="<?= $infosArray['image'] ?>" alt=<?= $infosArray['title'] ?>>
-                </article>
-            <?php endforeach ?>
+        <h1 class="title">Contactez-moi !</h1>
+        <div class="contact">
+            <form class="contact" action="contact.php" method="post">
+                    <label for="lastname">Nom*</label>
+                    <input type="text" name="lastname" id="lastname" pattern="([a-zA-Z0-9_\s]+)" required>
+
+                    <label for="firstname">Prenom*</label>
+                    <input type="text" name="firstname" id="firstname" pattern="([a-zA-Z0-9_\s]+)" required>
+
+                    <label for="firstname">email*</label>
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="description">information</label>
+                    <textarea class="description" type="text" name="description" id="description" ></textarea>
+
+                    <input type="submit" value="confirmer">
+
+
+            </form>
         </div>
-
     </main>
-
     <footer>
         <div class="author">
             <ul class="list-wihout-dot">

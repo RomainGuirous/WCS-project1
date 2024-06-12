@@ -22,7 +22,10 @@
                     <h3 class="link"> <a href="oeuvres.php">Oeuvres</a></h3>
                 </li>
                 <li>
-                    <h3 class=" link last-element"> <a href="actualites.php">Actualités</a></h3>
+                    <h3 class=" link "> <a href="actualites.php">Actualités</a></h3>
+                </li>
+                <li>
+                    <h3 class="link last-element"> <a href="contact.html">Contactez-moi</a></h3>
                 </li>
             </ul>
         </div>
@@ -63,8 +66,9 @@
             <ul class="list-wihout-dot">
                 <li><a href="index.html">ZC</a></li>
                 <li><a href="expositions.php"> Expositions</a></li>
-                <li><a href="oeuvres.html">Oeuvres</a></li>
+                <li><a href="oeuvres.php">Oeuvres</a></li>
                 <li><a href="actualites.php">Actualités</a></li>
+                <li><a href="contact.html">Contactez-moi</a></li>
             </ul>
         </div>
     </footer>

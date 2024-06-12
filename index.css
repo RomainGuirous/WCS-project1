@@ -22,6 +22,7 @@
     margin-top: 25vw;
     display: grid;
     grid-template-columns: repeat(5,1fr);
+    background-color: var(--secondary-color);
 }
 
 .description-text{

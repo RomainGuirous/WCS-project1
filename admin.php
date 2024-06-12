@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="actualites.css">
-    <link rel="icon" href="/images/ZC.png">
-    <title>Actualités</title>
+    <link rel="stylesheet" href="admin.css">
+    <title>Admin</title>
 </head>
 
 <body>
-    <header>
+<header>
         <div class="menu">
             <h1 class="logo"><a href="index.html">ZC</a></h1>
             <ul>
@@ -22,7 +21,7 @@
                     <h3 class="link"> <a href="oeuvres.php">Oeuvres</a></h3>
                 </li>
                 <li>
-                    <h3 class=" link hover-header"> <a href="actualites.php">Actualités</a></h3>
+                    <h3 class="link"> <a href="actualites.php">Actualités</a></h3>
                 </li>
                 <li>
                     <h3 class="link last-element"> <a href="contact.html">Contactez-moi</a></h3>
@@ -32,23 +31,19 @@
     </header>
 
     <main>
-        <?php require('data.php'); ?>
-        <div class="actualites-container">
-            <?php foreach ($actualites as $infosArray) : ?>
-                <article>
-                <div>
-                    <h1><?= $infosArray['title'] ?></h1>  
-                    <p>
-                        <?= $infosArray['description'] ?>
-                    </p>
-                    </div>  
-                    <img src="<?= $infosArray['image'] ?>" alt=<?= $infosArray['title'] ?>>
-                </article>
-            <?php endforeach ?>
+    <?php require('data.php'); ?>
+        <form action="#" method="post">
+        <h1>Oeuvres</h1>
+        <textarea name="oeuvres" id="oeuvres" cols="200" rows="30"><?php print_r($oeuvres) ?></textarea>
+        <h1>Actualités</h1>
+        <textarea name="actualites" id="actualites" cols="200" rows="30"><?php print_r($actualites) ?></textarea>
+        <h1>contact</h1>
+        <textarea name="contact" id="contact"  cols="200" rows="30"></textarea>
+        <div>
+        <input class="button" type="submit" value="Enregistrer">
         </div>
-
+    </form>
     </main>
-
     <footer>
         <div class="author">
             <ul class="list-wihout-dot">
