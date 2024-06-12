@@ -132,25 +132,28 @@ $expositions = [
 ];
 
 $actualites = [
-    [
-        "image" => "./images/culturepop.jpg",
-        "title" => "Culture et pop",
-        "description" => "Lorem ipsum dolor sit amet. Ut velit nobis qui quas quidem ad odit eaque et voluptatibus voluptatem et consectetur perspiciatis id reprehenderit vero ut obcaecati soluta.",
-    ],
-
-    [
-        "image" => "./images/museecanada.jpg",
-        "title" => "Musée des beaux-arts du Canada: un nouveau Directeur! ",
-        "description" => "EN BREF – Sébastien Lecornu succèdera à Guy Salteo au poste de directeur du Musée de Grenoble, à compter du 1er septembre 2024. Il aura notamment pour mission « d’élaborer (un) nouveau projet culturel et scientifique ». Cet agrégé d’histoire est depuis 2010 est un passionné de culture.",
-
-    ],
-    [
-        "image" => "./images/artphographie.png",
-        "title" => "Art et photographie",
-        "description" => "Qui obcaecati nobis et fugiat doloremque et quos dolores. Et internos saepe et exercitationem nesciunt et velit officiis quo autem nemo.",
-
-    ],
-];
+     [
+            "image" => "./images/culturepop.jpg",
+            "title" => "Culture et pop",
+            "description" => "Le festival POP CULTURE, un événement révolutionnaire qui se tiendra du 15 au 17 octobre 2024 à l'esplanade de la marie de Toutouvile. </p><p>L'événement sera marqué par une série de concerts pop, des ateliers de peinture et des opportunités de réseautage inégalées. Parmi les artistes confirmés, on compte le groupe mythique «Ghost Street», auteur du tube à succès «Swing Swing».</p><p>
+             Le Festival POP CULTURE mettra également en vedette plus de 100 exposants, présentant les oeuvres artistiques et les avancées technologiques sur la réalisation des tableaux numériques.</p><p> Je suis ravi de participer et de partager des moments de qualité autour de mes nombreuses productions.",   
+        ],
+    
+        [
+            "image" => "./images/museecanada.jpg",
+            "title" => "Musée des beaux-arts du Canada: un nouveau Directeur! ",
+            "description" => "EN BREF – Sébastien Lecornu succèdera à Sebastien Salteo au poste de directeur du Musée de Grenoble, à compter du 1er septembre 2024.</p><p> Cet agrégé d'histoire est depuis 2010 est un passionné de culture.
+             Il aura pour mission «d'élaborer le nouveau projet culturel et scientifique du Musée, de définir les orientations stratégiques et d'envisager des pistes de modernisation, tant sur le bâtiment que sur le parcours de visite».</p><p> Une belle opportunité pour celui qui succédera à Sebastien Salteo, dont la Ville du Québec tient par ailleurs à saluer le travail durant les deux décennies passées à la tête de l'institution.",
+            
+        ],
+        [
+            "image" => "./images/artphographie.png",
+            "title" => "Art et photographie",
+            "description" => " l'art et la photographie fusionnent en redéfinissent notre façon de voir la beauté et l'expression créative.</p><p> L'artiste Claudia Andujar présente lors d'une exposition «Claudia Andujar, La Lutte Yanomami» à la Fondation Cartier pour l'art contemporain du 30 juillet au 13 septembre 2024.
+            Elle a consacré sa vie à documenter et défendre les Yanomami, peuple amérindien de l'Amazonie brésilienne.</p><p>",
+            
+        ],
+    ];  
 $oeuvres = [
     [
         "image" => "./images/a-voyage-to-the-moon-2874114034.jpg",
