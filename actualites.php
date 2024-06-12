@@ -36,13 +36,17 @@
         <div class="actualites-container">
             <?php foreach ($actualites as $infosArray) : ?>
                 <article>
-                <div>
-                    <h1><?= $infosArray['title'] ?></h1>  
+                 <div class="description">
+                <h1>
+                <?= $infosArray['title'] ?>
+                    </h1>
                     <p>
                         <?= $infosArray['description'] ?>
                     </p>
-                    </div>  
-                    <img src="<?= $infosArray['image'] ?>" alt=<?= $infosArray['title'] ?>>
+                </div>  
+                    <img src="<?= $infosArray['image'] ?>" alt=<?= $infosArray['image'] ?>>
+                    
+                    
                 </article>
             <?php endforeach ?>
         </div>
