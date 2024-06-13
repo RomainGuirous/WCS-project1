@@ -84,11 +84,11 @@ footer {
     align-items: end;
 }
 
-h3 {
+/* h3 {
     display: inline-block;
     margin: 0 1rem;
     color: var(--light);
-}
+} */
 
 .logo {
     font-family: var(--secondary-font);

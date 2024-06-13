@@ -1,6 +1,7 @@
 @import url(style.css);
 
-.block-profile-picture{
+
+/* .block-profile-picture{
     background-color: var(--secondary-color);
     padding-top: 1rem;
     margin-bottom: -5rem;
@@ -16,26 +17,57 @@
     transform: translateY(40%);
     left: 50%;
     transform: translateX(-50%);
+} */
+
+img {
+    max-width: 60rem;
+    height: auto;
+}
+.biography{
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.biography{
-    margin-top: 25vw;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
+.paragraphe {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paragraphe p {
+    width: 80ch;
+}
+
+.paragraphe:nth-child(2n) {
     background-color: var(--secondary-color);
 }
 
-.description-text{
-    margin: 8px 0;
-    grid-column: 2 /5;
-}
 
-h3{
-    grid-column: 2 /5;
-    color: var(--dark);
-}
 
 @media screen and (max-width: 360px) {
+    img {
+        max-width: 20rem;
+        height: auto;
+    }
 
-   
+    .paragraphe p {
+        width: 30ch;
+    }
 }
+
+
+
+
+
+/* .description-text{
+    margin: 8px 0;
+    grid-column: 2 /5;
+} */ */
+
+/* h3{
+    grid-column: 2 /5;
+    color: var(--dark);
+} */
