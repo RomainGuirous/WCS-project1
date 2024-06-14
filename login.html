@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Admin</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <h1 class="logo"><a href="index.html">ZC</a></h1>
+            <ul>
+                <li>
+                    <h3 class="link"> <a href="expositions.php"> Expositions</a></h3>
+                </li>
+                <li>
+                    <h3 class="link"> <a href="oeuvres.php">Oeuvres</a></h3>
+                </li>
+                <li>
+                    <h3 class="link"> <a href="actualites.php">Actualités</a></h3>
+                </li>
+                <li>
+                    <h3 class="link last-element"> <a href="contact.html">Contactez-moi</a></h3>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        
+    <h1 class="title">Login</h1>
+        <div class="contact">
+            <form class="contact" action="login.php" method="post">
+            
+                    <label for="login">Login*</label>
+                    <input type="text" name="login" id="login" pattern="([a-zA-Z0-9_\s]+)" required>
+
+                    <label for="password">mot de passe*</label>
+                    <input type="password" name="password" id="password" required>
+
+                    <input type="submit" value="confirmer">
+            </form>
+        </div>
+    
+    </main>
+    <footer class="footer">
+        <div class="author">
+            <ul class="list-wihout-dot">
+                <li>Romain Guirous</li>
+                <li>Dorian Dequirez</li>
+                <li>Hermine Som Idellette Judith</li>
+            </ul>
+        </div>
+        <div class="navigation">
+            <ul class="list-wihout-dot">
+                <li><a href="index.html">ZC</a></li>
+                <li><a href="expositions.php"> Expositions</a></li>
+                <li><a href="oeuvres.php">Oeuvres</a></li>
+                <li><a href="actualites.php">Actualités</a></li>
+                <li><a href="contact.html">Contactez-moi</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

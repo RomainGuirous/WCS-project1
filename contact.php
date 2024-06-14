@@ -15,5 +15,3 @@ $fp = fopen('contact.csv','a+');
 fclose($fp);
 
 header('Location: /index.html' );
-
-//replace " ' vers \" \'

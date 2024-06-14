@@ -86,7 +86,6 @@ footer {
 
 /* h3 {
     display: inline-block;
-    margin: 0 1rem;
     color: var(--light);
 } */
 
@@ -118,9 +117,16 @@ footer {
 
 }
 
-.last-element {
-    margin-right: 5rem;
+.footer {
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  
 }
+/* .last-element {
+    margin-right: 5rem;
+} */
 
 /* .link {
     margin-top: 2rem;
