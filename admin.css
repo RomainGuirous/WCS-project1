@@ -15,6 +15,7 @@ table {
     font-family: sans-serif;
     font-size: 0.8rem;
     letter-spacing: 1px;
+    width: 75%;
   }
   
   caption {
@@ -25,12 +26,12 @@ table {
   
   thead,
   tfoot {
-    background-color: rgb(228 240 245);
+    background-color: var(--primary-color);
   }
   
   th,
   td {
-    border: 1px solid rgb(160 160 160);
+    border: 1px solid var(--dark);
     padding: 8px 10px;
   }
   
@@ -39,7 +40,7 @@ table {
   }
   
   tbody > tr:nth-of-type(even) {
-    background-color: rgb(237 238 242);
+    background-color: var(--secondary-color);
   }
   
   tfoot th {
@@ -50,3 +51,15 @@ table {
     font-weight: bold;
   }
   
+  @media screen and (max-width: 360px) {
+
+    table{
+     letter-spacing: 0px;
+
+    }
+    textarea{
+      width: 350px;
+    }
+
+
+}

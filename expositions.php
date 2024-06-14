@@ -54,7 +54,7 @@
 
     </main>
 
-    <footer>
+    <footer class="footer">
         <div class="author">
             <ul class="list-wihout-dot">
                 <li>Romain Guirous</li>

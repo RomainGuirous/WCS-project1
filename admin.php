@@ -31,47 +31,47 @@
     </header>
 
     <main>
-        
-    <h1>contact</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th scope="col">Nom</th>
-                    <th scope="col">Prénom</th>
-                    <th scope="col">Mail</th>
-                    <th scope="col">Message</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                $f = fopen("contact.csv", "r");
-                while (($line = fgetcsv($f)) !== false) {
-                    echo "<tr>";
-                    foreach ($line as $cell) {
-                        echo "<td>" . htmlspecialchars($cell) . "</td>";
+        <div class="mobile">
+            <h1>contact</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Prénom</th>
+                        <th scope="col">Mail</th>
+                        <th scope="col">Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    $f = fopen("contact.csv", "r");
+                    while (($line = fgetcsv($f)) !== false) {
+                        echo "<tr>";
+                        foreach ($line as $cell) {
+                            echo "<td>" . htmlspecialchars($cell) . "</td>";
+                        }
+                        echo "</tr>\n";
                     }
-                    echo "</tr>\n";
-                }
-                fclose($f);
-                ?>
-            </tbody>
-        </table>
+                    fclose($f);
+                    ?>
+                </tbody>
+            </table>
 
 
 
-        <?php require('data.php'); ?>
-        <form action="#" method="post">
-            <h1>Expositions</h1>
-            <textarea name="expositions" id="expositions" cols="200" rows="30"><?php print_r($expositions) ?></textarea>
-            <h1>Actualités</h1>
-            <textarea name="actualites" id="actualites" cols="200" rows="30"><?php print_r($actualites) ?></textarea>
-            <h1>Oeuvres</h1>
-            <textarea name="oeuvres" id="oeuvres" cols="200" rows="30"><?php print_r($oeuvres) ?></textarea>
-            <div>
-                <input class="button" type="submit" value="Enregistrer">
-            </div>
-        </form>
-        
+            <?php require('data.php'); ?>
+            <form action="#" method="post">
+                <h1>Expositions</h1>
+                <textarea name="expositions" id="expositions" cols="200" rows="30"><?php print_r($expositions) ?></textarea>
+                <h1>Actualités</h1>
+                <textarea name="actualites" id="actualites" cols="200" rows="30"><?php print_r($actualites) ?></textarea>
+                <h1>Oeuvres</h1>
+                <textarea name="oeuvres" id="oeuvres" cols="200" rows="30"><?php print_r($oeuvres) ?></textarea>
+                <div>
+                    <input class="submit" class="button" type="submit" value="Enregistrer">
+                </div>
+            </form>
+        </div>
     </main>
     <footer>
         <div class="author">
@@ -99,11 +99,11 @@ $expositions = $_POST['expositions'];
 $actualites = $_POST['actualites'];
 $oeuvres = $_POST['oeuvres'];
 $value = $expositions;
-str_replace("\[","'",$value);
-str_replace("\]","'",$value);
-str_replace("\(","[",$value);
-str_replace("\)","]",$value);
-str_replace("Array","",$value);
+str_replace("\[", "'", $value);
+str_replace("\]", "'", $value);
+str_replace("\(", "[", $value);
+str_replace("\)", "]", $value);
+str_replace("Array", "", $value);
 
 // var_dump($value);die();
 
@@ -111,7 +111,7 @@ str_replace("Array","",$value);
 // $fp = fopen('data.php','a+');
 
 //     fputcsv($fp, $valueToAdd);
-    
+
 // fclose($fp);
 
 
@@ -122,4 +122,5 @@ str_replace("Array","",$value);
 
 
 ?>
+
 </html>

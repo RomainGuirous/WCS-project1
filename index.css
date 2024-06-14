@@ -20,7 +20,7 @@
 } */
 
 img {
-    max-width: 60rem;
+    max-width: 95vh;
     height: auto;
 }
 .biography{
@@ -57,17 +57,3 @@ img {
         width: 30ch;
     }
 }
-
-
-
-
-
-/* .description-text{
-    margin: 8px 0;
-    grid-column: 2 /5;
-} */ */
-
-/* h3{
-    grid-column: 2 /5;
-    color: var(--dark);
-} */

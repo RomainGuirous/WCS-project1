@@ -1,46 +1,57 @@
 @import url(style.css);
 
 
-.contact{
+.contact {
     display: flex;
     flex-direction: column;
     margin: auto 25%;
 }
 
-input{
+input {
     margin-bottom: 10px;
-    height: 5vh;    
+    height: 5vh;
+}
+.background-secondary-color{
+    background-color: var(--secondary-color);
 }
 
-.description{
+.description {
     height: 10vh;
     margin-bottom: 15vh;
 }
 
-label{
+label {
     align-content: center;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.input-form{
+.input-form {
     margin-top: 1vw;
     position: relative;
 }
 
-.title{ 
-    text-align:center;
-    display:inline-block;
-    position:relative;
-    width:100%;
-   }
+.title {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+.submit{
+    color: var(--light);
+    background-color: var(--primary-color);
+    font-size: 2rem;
+}
 
 
-   @media screen and (max-width: 360px) {
+@media screen and (max-width: 360px) {
 
     .contact {
         margin: auto 5%;
     }
 
+    .submit{
+        margin-bottom: 8rem;
+    }
 }
